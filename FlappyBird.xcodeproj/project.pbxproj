@@ -7,14 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2BAF6C3B211B15A000ED5465 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BAF6C3A211B15A000ED5465 /* AVFoundation.framework */; };
+		2BAF6C3D211B19E300ED5465 /* switch1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 2BAF6C3C211B19E300ED5465 /* switch1.mp3 */; };
+		2BAF6C3F211B1BE400ED5465 /* shock1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 2BAF6C3E211B1BE400ED5465 /* shock1.mp3 */; };
+		2BAF6C41211B200900ED5465 /* kougenwowatarukaze.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 2BAF6C40211B200900ED5465 /* kougenwowatarukaze.mp3 */; };
 		2BE39FC52115DC28000519BA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BE39FC42115DC28000519BA /* AppDelegate.swift */; };
 		2BE39FC72115DC28000519BA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BE39FC62115DC28000519BA /* ViewController.swift */; };
 		2BE39FCA2115DC28000519BA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2BE39FC82115DC28000519BA /* Main.storyboard */; };
 		2BE39FCC2115DC29000519BA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2BE39FCB2115DC29000519BA /* Assets.xcassets */; };
 		2BE39FCF2115DC29000519BA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2BE39FCD2115DC29000519BA /* LaunchScreen.storyboard */; };
+		2BE39FD72115E2C8000519BA /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BE39FD62115E2C8000519BA /* GameScene.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2BAF6C3A211B15A000ED5465 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		2BAF6C3C211B19E300ED5465 /* switch1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = switch1.mp3; sourceTree = "<group>"; };
+		2BAF6C3E211B1BE400ED5465 /* shock1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = shock1.mp3; sourceTree = "<group>"; };
+		2BAF6C40211B200900ED5465 /* kougenwowatarukaze.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = kougenwowatarukaze.mp3; sourceTree = "<group>"; };
 		2BE39FC12115DC28000519BA /* FlappyBird.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FlappyBird.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2BE39FC42115DC28000519BA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2BE39FC62115DC28000519BA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +31,7 @@
 		2BE39FCB2115DC29000519BA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2BE39FCE2115DC29000519BA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2BE39FD02115DC29000519BA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2BE39FD62115E2C8000519BA /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +39,27 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2BAF6C3B211B15A000ED5465 /* AVFoundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2BAF6C39211B15A000ED5465 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2BAF6C3A211B15A000ED5465 /* AVFoundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		2BE39FB82115DC28000519BA = {
 			isa = PBXGroup;
 			children = (
 				2BE39FC32115DC28000519BA /* FlappyBird */,
 				2BE39FC22115DC28000519BA /* Products */,
+				2BAF6C39211B15A000ED5465 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -60,6 +80,10 @@
 				2BE39FCB2115DC29000519BA /* Assets.xcassets */,
 				2BE39FCD2115DC29000519BA /* LaunchScreen.storyboard */,
 				2BE39FD02115DC29000519BA /* Info.plist */,
+				2BE39FD62115E2C8000519BA /* GameScene.swift */,
+				2BAF6C3C211B19E300ED5465 /* switch1.mp3 */,
+				2BAF6C3E211B1BE400ED5465 /* shock1.mp3 */,
+				2BAF6C40211B200900ED5465 /* kougenwowatarukaze.mp3 */,
 			);
 			path = FlappyBird;
 			sourceTree = "<group>";
@@ -122,8 +146,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2BAF6C3F211B1BE400ED5465 /* shock1.mp3 in Resources */,
+				2BAF6C3D211B19E300ED5465 /* switch1.mp3 in Resources */,
 				2BE39FCF2115DC29000519BA /* LaunchScreen.storyboard in Resources */,
 				2BE39FCC2115DC29000519BA /* Assets.xcassets in Resources */,
+				2BAF6C41211B200900ED5465 /* kougenwowatarukaze.mp3 in Resources */,
 				2BE39FCA2115DC28000519BA /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -135,6 +162,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2BE39FD72115E2C8000519BA /* GameScene.swift in Sources */,
 				2BE39FC72115DC28000519BA /* ViewController.swift in Sources */,
 				2BE39FC52115DC28000519BA /* AppDelegate.swift in Sources */,
 			);
@@ -290,7 +318,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = jp.techacademy.ryota.kojima.FlappyBird;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -308,7 +336,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = jp.techacademy.ryota.kojima.FlappyBird;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
