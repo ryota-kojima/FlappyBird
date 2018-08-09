@@ -120,8 +120,6 @@ class GameScene: SKScene,SKPhysicsContactDelegate {
                 y: groundtexture.size().height*0.5
             )
             
-            //地面カテゴリの追加
-            groundsprite.physicsBody?.categoryBitMask=groundCategory
             
             //spriteにアクションを設定
             
@@ -130,6 +128,9 @@ class GameScene: SKScene,SKPhysicsContactDelegate {
             //物理演算を設定する
             groundsprite.physicsBody=SKPhysicsBody(rectangleOf: groundtexture.size())
             groundsprite.physicsBody?.isDynamic=false
+            //地面カテゴリの追加
+            groundsprite.physicsBody?.categoryBitMask=groundCategory
+            groundsprite.physicsBody?.contactTestBitMask=birdCategory
             
             //画像をシーンに表示する
             scrollNode.addChild(groundsprite)
